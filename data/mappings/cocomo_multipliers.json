@@ -1,0 +1,241 @@
+{
+    "description": "COCOMO II Cost Driver Multipliers",
+    "version": "2.0",
+    "source": "COCOMO II Model Definition Manual",
+    
+    "cost_drivers": {
+        "rely": {
+            "name": "Required Software Reliability",
+            "category": "Product",
+            "ratings": {
+                "vl": 0.75,
+                "l": 0.88,
+                "n": 1.00,
+                "h": 1.15,
+                "vh": 1.40,
+                "xh": null
+            },
+            "description": "Measure of the extent to which the software must perform its intended function over time"
+        },
+        "data": {
+            "name": "Database Size",
+            "category": "Product",
+            "ratings": {
+                "vl": null,
+                "l": 0.94,
+                "n": 1.00,
+                "h": 1.08,
+                "vh": 1.16,
+                "xh": null
+            },
+            "description": "Size of test database in bytes relative to program size in SLOC"
+        },
+        "cplx": {
+            "name": "Product Complexity",
+            "category": "Product",
+            "ratings": {
+                "vl": 0.70,
+                "l": 0.85,
+                "n": 1.00,
+                "h": 1.15,
+                "vh": 1.30,
+                "xh": 1.65
+            },
+            "description": "Composite of control, computational, device, and data management operations"
+        },
+        "time": {
+            "name": "Execution Time Constraint",
+            "category": "Platform",
+            "ratings": {
+                "vl": null,
+                "l": null,
+                "n": 1.00,
+                "h": 1.11,
+                "vh": 1.30,
+                "xh": 1.66
+            },
+            "description": "Degree of execution time constraint imposed on the software"
+        },
+        "stor": {
+            "name": "Main Storage Constraint",
+            "category": "Platform",
+            "ratings": {
+                "vl": null,
+                "l": null,
+                "n": 1.00,
+                "h": 1.06,
+                "vh": 1.21,
+                "xh": 1.56
+            },
+            "description": "Degree of main storage constraint imposed on the software"
+        },
+        "virt": {
+            "name": "Virtual Machine Volatility",
+            "category": "Platform",
+            "ratings": {
+                "vl": null,
+                "l": 0.87,
+                "n": 1.00,
+                "h": 1.15,
+                "vh": 1.30,
+                "xh": null
+            },
+            "description": "Relative level of change of underlying virtual machine"
+        },
+        "turn": {
+            "name": "Computer Turnaround Time",
+            "category": "Platform",
+            "ratings": {
+                "vl": null,
+                "l": 0.87,
+                "n": 1.00,
+                "h": 1.07,
+                "vh": 1.15,
+                "xh": null
+            },
+            "description": "Computer response time from user perspective"
+        },
+        "acap": {
+            "name": "Analyst Capability",
+            "category": "Personnel",
+            "ratings": {
+                "vl": 1.46,
+                "l": 1.19,
+                "n": 1.00,
+                "h": 0.86,
+                "vh": 0.71,
+                "xh": null
+            },
+            "description": "Analysis and design ability, efficiency, thoroughness, communication skills"
+        },
+        "aexp": {
+            "name": "Applications Experience",
+            "category": "Personnel",
+            "ratings": {
+                "vl": 1.29,
+                "l": 1.13,
+                "n": 1.00,
+                "h": 0.91,
+                "vh": 0.82,
+                "xh": null
+            },
+            "description": "Level of applications experience of the project team"
+        },
+        "pcap": {
+            "name": "Programmer Capability",
+            "category": "Personnel",
+            "ratings": {
+                "vl": 1.42,
+                "l": 1.17,
+                "n": 1.00,
+                "h": 0.86,
+                "vh": 0.70,
+                "xh": null
+            },
+            "description": "Programming ability, efficiency, code quality of the programming team"
+        },
+        "vexp": {
+            "name": "Virtual Machine Experience",
+            "category": "Personnel",
+            "ratings": {
+                "vl": 1.21,
+                "l": 1.10,
+                "n": 1.00,
+                "h": 0.90,
+                "vh": null,
+                "xh": null
+            },
+            "description": "Overall experience of project team with virtual machine"
+        },
+        "lexp": {
+            "name": "Programming Language Experience",
+            "category": "Personnel",
+            "ratings": {
+                "vl": 1.14,
+                "l": 1.07,
+                "n": 1.00,
+                "h": 0.95,
+                "vh": null,
+                "xh": null
+            },
+            "description": "Level of programming language experience of project team"
+        },
+        "modp": {
+            "name": "Modern Programming Practices",
+            "category": "Project",
+            "ratings": {
+                "vl": 1.24,
+                "l": 1.10,
+                "n": 1.00,
+                "h": 0.91,
+                "vh": 0.82,
+                "xh": null
+            },
+            "description": "Use of modern programming practices"
+        },
+        "tool": {
+            "name": "Use of Software Tools",
+            "category": "Project",
+            "ratings": {
+                "vl": 1.24,
+                "l": 1.10,
+                "n": 1.00,
+                "h": 0.91,
+                "vh": 0.83,
+                "xh": null
+            },
+            "description": "Use of software tools for development"
+        },
+        "sced": {
+            "name": "Required Development Schedule",
+            "category": "Project",
+            "ratings": {
+                "vl": 1.23,
+                "l": 1.08,
+                "n": 1.00,
+                "h": 1.04,
+                "vh": 1.10,
+                "xh": null
+            },
+            "description": "Schedule constraint imposed on the project"
+        }
+    },
+    
+    "rating_scale": {
+        "vl": "Very Low",
+        "l": "Low",
+        "n": "Nominal",
+        "h": "High",
+        "vh": "Very High",
+        "xh": "Extra High"
+    },
+    
+    "cocomo_constants": {
+        "organic": {
+            "a": 2.40,
+            "b": 1.05,
+            "c": 2.50,
+            "d": 0.38,
+            "description": "Small teams, familiar environment, flexible requirements"
+        },
+        "semi_detached": {
+            "a": 3.00,
+            "b": 1.12,
+            "c": 2.50,
+            "d": 0.35,
+            "description": "Medium teams, mixture of experienced and inexperienced"
+        },
+        "embedded": {
+            "a": 3.60,
+            "b": 1.20,
+            "c": 2.50,
+            "d": 0.32,
+            "description": "Large teams, complex environment, tight constraints"
+        },
+        "cocomo_ii": {
+            "a": 2.94,
+            "b": 1.12,
+            "description": "Default COCOMO II constants"
+        }
+    }
+}
