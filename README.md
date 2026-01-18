@@ -215,5 +215,3 @@ Repository: https://github.com/64Sanjay/Heterogeneous-Ensemble-Model-for-Softwar
 
 Author / Maintainer: 64Sanjay  
 For questions or collaboration, open an issue or contact via GitHub.
-
-```
